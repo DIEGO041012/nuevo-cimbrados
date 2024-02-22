@@ -1,0 +1,40 @@
+<?php
+require './conexiondatabase.php';
+
+
+$conexion = conectarBD();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Aquí obtienes los datos del formulario
+    $nombre = $_POST['nombre'];
+    $cedula = $_POST['cedula'];
+    $edad = $_POST['edad'];
+    $sexo = $_POST['sexo'];
+    $fecha = $_POST['fecha'];
+    $actividad = $_POST['actividad'];
+    $hora_inicio = $_POST['hora_inicio'];
+    $hora_final = $_POST['hora_final'];
+    $tipo_hora_extra = $_POST['tipo_hora_extra'];
+    $firma = $_POST['firma'];
+    // Puedes obtener los otros campos de la misma manera
+
+    // Por ejemplo, solo imprimo los datos por ahora:
+    
+    echo "nombre: " . $nombre . "<br>";
+    echo "cedula: " . $cedula . "<br>";
+    echo "edad: " . $edad . "<br>";
+    echo "sexo: " . $sexo . "<br>";
+    echo "fecha: " . $fecha . "<br>";
+    echo "actividad: " . $actividad . "<br>";
+    echo "hora_inicio: " . $hora_inicio . "<br>";
+    echo "hora_final: " . $hora_final . "<br>";
+    echo "tipo_hora_extra: " . $tipo_hora_extra . "<br>";
+    echo "firma: " . $firma . "<br>";
+    // Puedes imprimir los otros campos de la misma manera.
+
+    $sql = "INSERT INTO formulario_horas_extras( nombre, cedula, edad, sexo,  fecha, actividad, hora_inicio, hora_final, tipo_hora_extra, firma ) VALUES ('$nombre','$cedula','$edad','$sexo','$fecha','$actividad','$hora_inicio','$hora_final','$tipo_hora_extra','$firma')";
+
+    $conexion->query($sql);
+}
+
+?>

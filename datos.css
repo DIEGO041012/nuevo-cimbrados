@@ -1,0 +1,231 @@
+:root {
+    --primario: #faf5f5;
+    --primarioOscuro: rgb(233, 187, 2);
+    --secundario: #0c0755;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+  
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+.prestamos {   /*reporte diario*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .prestamo {    /*reporte diario*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-bottom: 5px;
+  }
+
+  .prestamo div {     /*reporte diario*/
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+   .titulo2 {          /*reporte diario*/
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  .cabecera1 {       /*reporte diario*/
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .cabecera1 span {     /*reporte diario*/
+    background-color: var(--primarioOscuro);
+    padding: 5px;
+    text-align: center;
+  }
+  .prestamos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.prestamo2 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Cambiado de 7 a 5 para que coincida con la cabecera */
+    margin-bottom: 5px;
+}
+
+.prestamo2 div {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cabecera2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Cambiado de 7 a 5 para que coincida con los prestamos */
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.cabecera2 span {
+    background-color: var(--primarioOscuro);
+    padding: 5px;
+    text-align: center;
+}
+
+  /*stylos requisicioness,*/
+
+  .prestamos3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.prestamo3 {    /*stylos requisicioness,*/
+    width: 110%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /* Cambiado de 7 a 5 para que coincida con la cabecera */
+    margin-bottom: 5px;
+}
+
+.prestamo3 div {    /*stylos requisicioness,*/
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cabecera3 {    /*stylos requisicioness,*/
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /* Cambiado de 7 a 5 para que coincida con los prestamos */
+    width: 110%;
+    margin-bottom: 5px;
+}
+
+.cabecera3 span {     /*stylos requisicioness,*/
+    background-color: var(--primarioOscuro);
+    padding: 5px;
+    text-align: center;
+}
+/* stylos bajas*/
+.prestamos4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.prestamo4 {
+  width: 80%;
+  margin: 0 auto; /* Esto centra el contenedor .prestamo4 horizontalmente */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambiado de 7 a 5 para que coincida con la cabecera */
+  margin-bottom: 5px;
+}
+
+.prestamo4 div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cabecera4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambiado de 7 a 5 para que coincida con los prestamos */
+  width: 80%;
+  margin: 0 auto; /* Esto centra el contenedor .cabecera4 horizontalmente */
+  margin-bottom: 5px;
+}
+
+.cabecera4 span {
+  background-color: var(--primarioOscuro);
+  padding: 5px;
+  text-align: center;
+}
+/*usuarias*/
+.prestamos5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.prestamo5 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Cambiado de 7 a 5 para que coincida con la cabecera */
+  margin-bottom: 5px;
+}
+
+.prestamo5 div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cabecera5 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Cambiado de 7 a 5 para que coincida con los prestamos */
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.cabecera5 span {
+  background-color: var(--primarioOscuro);
+  padding: 5px;
+  text-align: center;
+}
+
+/*prestamos*/
+.prestamos6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.prestamo6 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambiado de 7 a 5 para que coincida con la cabecera */
+  margin-bottom: 5px;
+}
+
+.prestamo6 div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cabecera6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambiado de 7 a 5 para que coincida con los prestamos */
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.cabecera6 span {
+  background-color: var(--primarioOscuro);
+  padding: 5px;
+  text-align: center;
+}
+  
+  

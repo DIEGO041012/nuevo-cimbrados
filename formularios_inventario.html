@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area TI</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logocimbrados-removebg-preview.png" alt="Logotipo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="./index.html">Formularios</a>
+        <a class="navegacion__enlace" href="./loginadmin.html">Base de Datos</a>   
+    </nav>
+    <main class="contenedor">
+        <h1>PROPERACIONALES MAQUINAS </h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="https://previews.123rf.com/images/tidty/tidty1705/tidty170500035/78170641-ingeniero-y-constructor-revisi%C3%B3n-plan-durante-la-reuni%C3%B3n-del-equipo-en-el-sitio-de-construcci%C3%B3n-en.jpg" alt="Imagen del Producto">
+
+            <div class="camisa__contenido">
+                <form id="miFormulario" class="formulario">
+                    <fieldset>
+                        <legend>Ingresar Informacion</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Articulo</label>
+                        <input class="input-text" type="text" placeholder="Articulo">
+                    </div>
+                        <div class="campo">
+                        <label>Cantidad</label>
+                        <input class="input-text" type="tel" placeholder="Cantidad">
+                    </div>
+                    <div class="campo">
+                        <label>Fiecha Ingreso</label>
+                        <input class="input-text" type="email" placeholder="Tu correo">
+                    </div>
+                    
+                    <div class="campo">
+                        <label>Observaciones</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                    </div> <!-- este es el contenedor-campos-->
+
+                  <div class="alinear-derecha flex">                         
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                   </div>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer">
+        <p class="footer__texto">Cimbrados - Todos los derechos Reservados 2024.</p>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>    
+</body>
+</html>
